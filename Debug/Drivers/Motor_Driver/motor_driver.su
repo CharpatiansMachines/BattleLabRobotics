@@ -1,0 +1,7 @@
+../Drivers/Motor_Driver/motor_driver.c:66:6:Drv_Init	4	static
+../Drivers/Motor_Driver/motor_driver.c:77:6:Drv_MotorMove_Fwd	16	static
+../Drivers/Motor_Driver/motor_driver.c:88:6:Drv_MotorMove_Bck	16	static
+../Drivers/Motor_Driver/motor_driver.c:99:6:Drv_Both_MotorMove_Fwd	16	static
+../Drivers/Motor_Driver/motor_driver.c:110:6:Drv_Both_MotorMove_Bck	16	static
+../Drivers/Motor_Driver/motor_driver.c:122:6:Drv_Both_MotMove_Indep	16	static
+../Drivers/Motor_Driver/motor_driver.c:134:6:Drv_Deinit	4	static
