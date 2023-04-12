@@ -9,36 +9,41 @@
 #define COM_DRIVER_COMMUNICATION_DRIVER_H_
 
 
+
+
 #define COMMUNICATION_DRIVER_BUFFER_SIZE 1024
-enum Fight_Command{
+
+typedef enum{
 	STOP_FIGHT = 0x00,
 	START_FIGHT = 0x01,
-};
+}Fight_Command;
 
-enum Action_Command{
-	NO_COMMAND = 0x00,
-	PRINT_COMMAND = 0x01,
-	FROMTAL_ATACK_STRATEGY = 0x02
-};
+typedef enum {
+	PRINT_COMMAND = 0x00,
+	FROMTAL_ATACK_STRATEGY = 0x01,
+}Action_Command;
 
 
-char Communication_Driver_Buffer[COMMUNICATION_DRIVER_BUFFER_SIZE];
+extern char Communication_Driver_Buffer[COMMUNICATION_DRIVER_BUFFER_SIZE];
 
 /**
  * reinitialize Communication_Driver_Buffer
  * initialize pins
  */
 void Communication_Driver_Init(void);
+
 /**
  * Transmit to PC the message
  * @param message string
  */
 void Communication_Driver_Log_To_Pc(char* message);
+
 /**
  * Log to buffer without override
  * @param message string
  */
-void Communication_Driver_Log_To_Pc(char* message);
+void Communication_Driver_Log_To_Buffer(char* message);
+
 /**
  * Read a strategy command
  * @return the command
