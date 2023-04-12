@@ -9,6 +9,7 @@ S_SRCS :=
 C_SRCS := 
 S_UPPER_SRCS := 
 O_SRCS := 
+CYCLO_FILES := 
 SIZE_OUTPUT := 
 OBJDUMP_LIST := 
 SU_FILES := 
@@ -24,6 +25,8 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/Com_Driver \
+Drivers/Enemy_Sensors \
+Drivers/LineSensours \
 Drivers/Motor_Driver \
 Drivers/STM32F4xx_HAL_Driver/Src \
 

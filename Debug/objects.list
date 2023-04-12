@@ -6,6 +6,8 @@
 "./Core/Src/system_stm32f4xx.o"
 "./Core/Startup/startup_stm32f407vgtx.o"
 "./Drivers/Com_Driver/UART_Driver.o"
+"./Drivers/Enemy_Sensors/Enemy_Sensors.o"
+"./Drivers/LineSensours/LineSensors.o"
 "./Drivers/Motor_Driver/motor_driver.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
 "./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
