@@ -11,7 +11,7 @@ RM := rm -rf
 -include sources.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
 -include Drivers/Motor_Driver/subdir.mk
--include Drivers/LineSensours/subdir.mk
+-include Drivers/Line_Sensors/subdir.mk
 -include Drivers/Enemy_Sensors/subdir.mk
 -include Drivers/Com_Driver/subdir.mk
 -include Core/Startup/subdir.mk

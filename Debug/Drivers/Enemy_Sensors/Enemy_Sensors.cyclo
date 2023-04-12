@@ -1,0 +1,6 @@
+Enemy_Sensors.c:12:10:readSensors	1
+Enemy_Sensors.c:19:6:Enemy_Sensors_Init	1
+Enemy_Sensors.c:24:6:Enemy_Sensors_Take_Possible_Positions	1
+Enemy_Sensors.c:46:9:Enemy_Position_Distance	1
+Enemy_Sensors.c:52:9:Enemy_Position_To_Number	1
+Enemy_Sensors.c:60:15:Enemy_Position_From_Number	1

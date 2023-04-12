@@ -4,14 +4,16 @@
  *  Created on: Apr 10, 2023
  *      Author: BRG
  */
+#include "Line_Sensors.h"
 
-/**
- *
- */
-void Line_Detection_config(void){
+void Line_Sensors_Init(void)
+{
 
 }
 
-void Line_Detection_read(void){
+
+
+uint8_t Line_Sensors_Read(void)
+{
 	return 0;
 }

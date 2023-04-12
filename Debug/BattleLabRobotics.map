@@ -507,6 +507,21 @@ Discarded input sections
  .text          0x0000000000000000       0x14 ./Core/Startup/startup_stm32f407vgtx.o
  .data          0x0000000000000000        0x0 ./Core/Startup/startup_stm32f407vgtx.o
  .bss           0x0000000000000000        0x0 ./Core/Startup/startup_stm32f407vgtx.o
+ .group         0x0000000000000000        0xc ./Drivers/Com_Driver/Communication_Driver.o
+ .text          0x0000000000000000        0x0 ./Drivers/Com_Driver/Communication_Driver.o
+ .data          0x0000000000000000        0x0 ./Drivers/Com_Driver/Communication_Driver.o
+ .bss           0x0000000000000000        0x0 ./Drivers/Com_Driver/Communication_Driver.o
+ .debug_info    0x0000000000000000       0x21 ./Drivers/Com_Driver/Communication_Driver.o
+ .debug_abbrev  0x0000000000000000       0x13 ./Drivers/Com_Driver/Communication_Driver.o
+ .debug_aranges
+                0x0000000000000000       0x18 ./Drivers/Com_Driver/Communication_Driver.o
+ .debug_macro   0x0000000000000000       0x11 ./Drivers/Com_Driver/Communication_Driver.o
+ .debug_macro   0x0000000000000000      0xa78 ./Drivers/Com_Driver/Communication_Driver.o
+ .debug_line    0x0000000000000000       0x4d ./Drivers/Com_Driver/Communication_Driver.o
+ .debug_str     0x0000000000000000     0x2cf9 ./Drivers/Com_Driver/Communication_Driver.o
+ .comment       0x0000000000000000       0x51 ./Drivers/Com_Driver/Communication_Driver.o
+ .ARM.attributes
+                0x0000000000000000       0x34 ./Drivers/Com_Driver/Communication_Driver.o
  .group         0x0000000000000000        0xc ./Drivers/Com_Driver/UART_Driver.o
  .group         0x0000000000000000        0xc ./Drivers/Com_Driver/UART_Driver.o
  .group         0x0000000000000000        0xc ./Drivers/Com_Driver/UART_Driver.o
@@ -594,11 +609,24 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
  .data          0x0000000000000000        0x0 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
  .bss           0x0000000000000000        0x0 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
- .debug_info    0x0000000000000000       0x68 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
- .debug_abbrev  0x0000000000000000       0x29 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
- .debug_aranges
+ .text.readSensors
+                0x0000000000000000       0x10 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .text.Enemy_Sensors_Init
+                0x0000000000000000        0xe ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .text.Enemy_Sensors_Take_Possible_Positions
+                0x0000000000000000       0x90 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .text.Enemy_Position_Distance
                 0x0000000000000000       0x18 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
- .debug_macro   0x0000000000000000       0x73 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .text.Enemy_Position_To_Number
+                0x0000000000000000       0x42 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .text.Enemy_Position_From_Number
+                0x0000000000000000       0x70 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .debug_info    0x0000000000000000      0x1e9 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .debug_abbrev  0x0000000000000000       0xff ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .debug_aranges
+                0x0000000000000000       0x48 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .debug_ranges  0x0000000000000000       0x38 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .debug_macro   0x0000000000000000       0x79 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
  .debug_macro   0x0000000000000000      0xa78 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
  .debug_macro   0x0000000000000000       0x22 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
  .debug_macro   0x0000000000000000       0x8e ./Drivers/Enemy_Sensors/Enemy_Sensors.o
@@ -606,32 +634,47 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x103 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
  .debug_macro   0x0000000000000000       0x6a ./Drivers/Enemy_Sensors/Enemy_Sensors.o
  .debug_macro   0x0000000000000000      0x1df ./Drivers/Enemy_Sensors/Enemy_Sensors.o
- .debug_line    0x0000000000000000      0x398 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
- .debug_str     0x0000000000000000     0x3c50 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .debug_line    0x0000000000000000      0x480 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .debug_str     0x0000000000000000     0x3dc7 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
  .comment       0x0000000000000000       0x51 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
+ .debug_frame   0x0000000000000000       0xec ./Drivers/Enemy_Sensors/Enemy_Sensors.o
  .ARM.attributes
                 0x0000000000000000       0x34 ./Drivers/Enemy_Sensors/Enemy_Sensors.o
- .group         0x0000000000000000        0xc ./Drivers/LineSensours/LineSensors.o
- .text          0x0000000000000000        0x0 ./Drivers/LineSensours/LineSensors.o
- .data          0x0000000000000000        0x0 ./Drivers/LineSensours/LineSensors.o
- .bss           0x0000000000000000        0x0 ./Drivers/LineSensours/LineSensors.o
- .text.Line_Detection_config
-                0x0000000000000000        0xe ./Drivers/LineSensours/LineSensors.o
- .text.Line_Detection_read
-                0x0000000000000000        0xe ./Drivers/LineSensours/LineSensors.o
- .debug_info    0x0000000000000000       0x4e ./Drivers/LineSensours/LineSensors.o
- .debug_abbrev  0x0000000000000000       0x31 ./Drivers/LineSensours/LineSensors.o
+ .group         0x0000000000000000        0xc ./Drivers/Line_Sensors/Line_Sensors.o
+ .group         0x0000000000000000        0xc ./Drivers/Line_Sensors/Line_Sensors.o
+ .group         0x0000000000000000        0xc ./Drivers/Line_Sensors/Line_Sensors.o
+ .group         0x0000000000000000        0xc ./Drivers/Line_Sensors/Line_Sensors.o
+ .group         0x0000000000000000        0xc ./Drivers/Line_Sensors/Line_Sensors.o
+ .group         0x0000000000000000        0xc ./Drivers/Line_Sensors/Line_Sensors.o
+ .group         0x0000000000000000        0xc ./Drivers/Line_Sensors/Line_Sensors.o
+ .group         0x0000000000000000        0xc ./Drivers/Line_Sensors/Line_Sensors.o
+ .text          0x0000000000000000        0x0 ./Drivers/Line_Sensors/Line_Sensors.o
+ .data          0x0000000000000000        0x0 ./Drivers/Line_Sensors/Line_Sensors.o
+ .bss           0x0000000000000000        0x0 ./Drivers/Line_Sensors/Line_Sensors.o
+ .text.Line_Sensors_Init
+                0x0000000000000000        0xe ./Drivers/Line_Sensors/Line_Sensors.o
+ .text.Line_Sensors_Read
+                0x0000000000000000       0x10 ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_info    0x0000000000000000       0xb0 ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_abbrev  0x0000000000000000       0x72 ./Drivers/Line_Sensors/Line_Sensors.o
  .debug_aranges
-                0x0000000000000000       0x28 ./Drivers/LineSensours/LineSensors.o
- .debug_ranges  0x0000000000000000       0x18 ./Drivers/LineSensours/LineSensors.o
- .debug_macro   0x0000000000000000       0x11 ./Drivers/LineSensours/LineSensors.o
- .debug_macro   0x0000000000000000      0xa78 ./Drivers/LineSensours/LineSensors.o
- .debug_line    0x0000000000000000       0x71 ./Drivers/LineSensours/LineSensors.o
- .debug_str     0x0000000000000000     0x2d1c ./Drivers/LineSensours/LineSensors.o
- .comment       0x0000000000000000       0x51 ./Drivers/LineSensours/LineSensors.o
- .debug_frame   0x0000000000000000       0x50 ./Drivers/LineSensours/LineSensors.o
+                0x0000000000000000       0x28 ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_ranges  0x0000000000000000       0x18 ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_macro   0x0000000000000000       0x72 ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_macro   0x0000000000000000      0xa78 ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_macro   0x0000000000000000       0x22 ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_macro   0x0000000000000000       0x8e ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_macro   0x0000000000000000       0x51 ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_macro   0x0000000000000000      0x103 ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_macro   0x0000000000000000       0x6a ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_macro   0x0000000000000000      0x1df ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_macro   0x0000000000000000       0x1c ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_line    0x0000000000000000      0x3be ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_str     0x0000000000000000     0x3ce3 ./Drivers/Line_Sensors/Line_Sensors.o
+ .comment       0x0000000000000000       0x51 ./Drivers/Line_Sensors/Line_Sensors.o
+ .debug_frame   0x0000000000000000       0x50 ./Drivers/Line_Sensors/Line_Sensors.o
  .ARM.attributes
-                0x0000000000000000       0x34 ./Drivers/LineSensours/LineSensors.o
+                0x0000000000000000       0x34 ./Drivers/Line_Sensors/Line_Sensors.o
  .group         0x0000000000000000        0xc ./Drivers/Motor_Driver/motor_driver.o
  .group         0x0000000000000000        0xc ./Drivers/Motor_Driver/motor_driver.o
  .group         0x0000000000000000        0xc ./Drivers/Motor_Driver/motor_driver.o
@@ -2523,9 +2566,10 @@ LOAD ./Core/Src/syscalls.o
 LOAD ./Core/Src/sysmem.o
 LOAD ./Core/Src/system_stm32f4xx.o
 LOAD ./Core/Startup/startup_stm32f407vgtx.o
+LOAD ./Drivers/Com_Driver/Communication_Driver.o
 LOAD ./Drivers/Com_Driver/UART_Driver.o
 LOAD ./Drivers/Enemy_Sensors/Enemy_Sensors.o
-LOAD ./Drivers/LineSensours/LineSensors.o
+LOAD ./Drivers/Line_Sensors/Line_Sensors.o
 LOAD ./Drivers/Motor_Driver/motor_driver.o
 LOAD ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o
 LOAD ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o

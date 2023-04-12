@@ -26,7 +26,7 @@ Core/Src \
 Core/Startup \
 Drivers/Com_Driver \
 Drivers/Enemy_Sensors \
-Drivers/LineSensours \
+Drivers/Line_Sensors \
 Drivers/Motor_Driver \
 Drivers/STM32F4xx_HAL_Driver/Src \
 

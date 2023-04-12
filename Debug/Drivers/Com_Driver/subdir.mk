@@ -5,12 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Drivers/Com_Driver/Communication_Driver.c \
 ../Drivers/Com_Driver/UART_Driver.c 
 
 OBJS += \
+./Drivers/Com_Driver/Communication_Driver.o \
 ./Drivers/Com_Driver/UART_Driver.o 
 
 C_DEPS += \
+./Drivers/Com_Driver/Communication_Driver.d \
 ./Drivers/Com_Driver/UART_Driver.d 
 
 
@@ -21,7 +24,7 @@ Drivers/Com_Driver/%.o Drivers/Com_Driver/%.su Drivers/Com_Driver/%.cyclo: ../Dr
 clean: clean-Drivers-2f-Com_Driver
 
 clean-Drivers-2f-Com_Driver:
-	-$(RM) ./Drivers/Com_Driver/UART_Driver.cyclo ./Drivers/Com_Driver/UART_Driver.d ./Drivers/Com_Driver/UART_Driver.o ./Drivers/Com_Driver/UART_Driver.su
+	-$(RM) ./Drivers/Com_Driver/Communication_Driver.cyclo ./Drivers/Com_Driver/Communication_Driver.d ./Drivers/Com_Driver/Communication_Driver.o ./Drivers/Com_Driver/Communication_Driver.su ./Drivers/Com_Driver/UART_Driver.cyclo ./Drivers/Com_Driver/UART_Driver.d ./Drivers/Com_Driver/UART_Driver.o ./Drivers/Com_Driver/UART_Driver.su
 
 .PHONY: clean-Drivers-2f-Com_Driver
 
