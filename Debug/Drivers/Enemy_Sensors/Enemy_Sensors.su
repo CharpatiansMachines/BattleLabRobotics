@@ -1,6 +1,0 @@
-../Drivers/Enemy_Sensors/Enemy_Sensors.c:12:10:readSensors	4	static
-../Drivers/Enemy_Sensors/Enemy_Sensors.c:19:6:Enemy_Sensors_Init	4	static
-../Drivers/Enemy_Sensors/Enemy_Sensors.c:24:6:Enemy_Sensors_Take_Possible_Positions	24	static
-../Drivers/Enemy_Sensors/Enemy_Sensors.c:46:9:Enemy_Position_Distance	16	static
-../Drivers/Enemy_Sensors/Enemy_Sensors.c:52:9:Enemy_Position_To_Number	16	static
-../Drivers/Enemy_Sensors/Enemy_Sensors.c:60:15:Enemy_Position_From_Number	24	static

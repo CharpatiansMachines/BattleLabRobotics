@@ -1,0 +1,8 @@
+../Drivers/Robot_Driver/Enemy_Sensors.c:21:10:readSensors	4	static
+../Drivers/Robot_Driver/Enemy_Sensors.c:28:6:Enemy_Sensors_Init	32	static
+../Drivers/Robot_Driver/Enemy_Sensors.c:41:9:Enemy_Sensors_Take_Possible_Positions	24	static
+../Drivers/Robot_Driver/Enemy_Sensors.c:88:9:Enemy_Position_Distance	16	static
+../Drivers/Robot_Driver/Enemy_Sensors.c:94:9:Enemy_Position_To_Number	16	static
+../Drivers/Robot_Driver/Enemy_Sensors.c:101:15:Enemy_Position_From_Number	24	static
+../Drivers/Robot_Driver/Enemy_Sensors.c:113:6:Enemy_Sensors_Test	304	static
+../Drivers/Robot_Driver/Enemy_Sensors.c:153:6:Enemy_Position_Test	296	static

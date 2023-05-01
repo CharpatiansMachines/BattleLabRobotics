@@ -15,14 +15,12 @@
   *
   ******************************************************************************
   */
-
-
+/* USER CODE END Header */
+/* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "Communication_Driver.h"
 
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
-
 
 
 /**
@@ -32,24 +30,14 @@ static void MX_GPIO_Init(void);
 int main(void)
 {
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
-
-  /* Configure the system clock */
   SystemClock_Config();
-
-  /* Initialize all configured peripherals */
   MX_GPIO_Init();
-
-  Communication_Driver_Init();
 
   while (1)
   {
-	  char Message[] = "Hello World\r\n";
-	  Communication_Driver_Log_To_Pc(Message);
 
   }
-  /* USER CODE END 3 */
 }
 
 /**
@@ -97,8 +85,6 @@ void SystemClock_Config(void)
   }
 }
 
-
-
 /**
   * @brief GPIO Initialization Function
   * @param None
@@ -106,19 +92,16 @@ void SystemClock_Config(void)
   */
 static void MX_GPIO_Init(void)
 {
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOC_CLK_ENABLE();
-  __HAL_RCC_GPIOH_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
-
-  /*Configure GPIO pin : BOOT1_Pin */
-  GPIO_InitStruct.Pin = BOOT1_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(BOOT1_GPIO_Port, &GPIO_InitStruct);
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
+  __HAL_RCC_GPIOD_CLK_ENABLE();
+  __HAL_RCC_GPIOE_CLK_ENABLE();
+  __HAL_RCC_GPIOF_CLK_ENABLE();
+  __HAL_RCC_GPIOG_CLK_ENABLE();
+  __HAL_RCC_GPIOH_CLK_ENABLE();
 
 }
 

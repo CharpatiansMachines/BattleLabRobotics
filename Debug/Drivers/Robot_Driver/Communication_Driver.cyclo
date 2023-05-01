@@ -1,0 +1,4 @@
+Communication_Driver.c:23:6:UART2_Configuration	1
+Communication_Driver.c:49:6:Communication_Driver_Init	1
+Communication_Driver.c:53:9:Communication_Driver_Log_To_Pc	2
+Communication_Driver.c:63:6:Communication_Driver_Test_Log_To_Pc	1

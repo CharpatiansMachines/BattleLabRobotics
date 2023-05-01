@@ -24,9 +24,10 @@ C_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
-Drivers/Com_Driver \
-Drivers/Enemy_Sensors \
-Drivers/Line_Sensors \
-Drivers/Motor_Driver \
+Drivers/Robot_Driver \
 Drivers/STM32F4xx_HAL_Driver/Src \
+Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src \
+Middlewares/ST/STM32_USB_Device_Library/Core/Src \
+USB_DEVICE/App \
+USB_DEVICE/Target \
 

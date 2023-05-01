@@ -1,0 +1,5 @@
+../Drivers/Robot_Driver/Line_Sensors.c:34:13:configure_adc_for_line	16	static
+../Drivers/Robot_Driver/Line_Sensors.c:55:17:read_2_ADC_Simultaneous	64	static
+../Drivers/Robot_Driver/Line_Sensors.c:88:6:interpreate_data	16	static
+../Drivers/Robot_Driver/Line_Sensors.c:95:6:Line_Sensors_Init	8	static
+../Drivers/Robot_Driver/Line_Sensors.c:101:9:Line_Sensors_Read	32	static

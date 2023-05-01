@@ -1,2 +1,0 @@
-../Drivers/Line_Sensors/Line_Sensors.c:9:6:Line_Sensors_Init	4	static
-../Drivers/Line_Sensors/Line_Sensors.c:16:9:Line_Sensors_Read	4	static

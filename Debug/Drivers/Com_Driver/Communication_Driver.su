@@ -1,3 +1,0 @@
-../Drivers/Com_Driver/Communication_Driver.c:18:6:UART2_Configuration	40	static
-../Drivers/Com_Driver/Communication_Driver.c:44:6:Communication_Driver_Init	8	static
-../Drivers/Com_Driver/Communication_Driver.c:48:6:Communication_Driver_Log_To_Pc	16	static
