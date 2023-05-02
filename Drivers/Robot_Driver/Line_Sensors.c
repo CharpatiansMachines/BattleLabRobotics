@@ -6,7 +6,8 @@
  */
 #include "Line_Sensors.h"
 #include "stm32f4xx_hal_adc.h"
-//#include "stm32f4xx_hal_gpio.h"
+#include <strings.h>
+#include <stdio.h>
 
 #define SENSORS_GPIO GPIOA
 
@@ -23,7 +24,10 @@
 #define SENSOR_BACKL_CHANNEL ADC_CHANNEL_2
 #define SENSOR_BACKR_CHANNEL ADC_CHANNEL_3
 
-//#define
+#define LINE_SENSOR_TRIGGER_THRESHOLD 40
+#define LINE_SENSOR_UNTRIGGER_THRESHOLD 80
+
+
 
 uint8_t u8_Line_Sensors_data;
 
@@ -47,7 +51,7 @@ static void configure_adc_for_line(ADC_HandleTypeDef *hadc,ADC_TypeDef *adc){
 	hadc->Init.EOCSelection = ADC_EOC_SINGLE_CONV;
 	if (HAL_ADC_Init(hadc) != HAL_OK)
 	{
-		Error_Handler();
+//		Error_Handler();
 	}
 }
 
@@ -62,21 +66,21 @@ static uint32_t read_2_ADC_Simultaneous(ADC_HandleTypeDef *hadc1,ADC_HandleTypeD
 	channel2_conf.Channel = channel2;
 	channel2_conf.Rank = 1;
 	channel2_conf.SamplingTime = ADC_SAMPLETIME_3CYCLES;
-	if (HAL_ADC_ConfigChannel(&hadc1, &channel1_conf) != HAL_OK)
+	if (HAL_ADC_ConfigChannel(hadc1, &channel1_conf) != HAL_OK)
 	{
-	Error_Handler();
+//		Error_Handler();
 	}
-	if (HAL_ADC_ConfigChannel(&hadc1, &channel2_conf) != HAL_OK)
+	if (HAL_ADC_ConfigChannel(hadc2, &channel2_conf) != HAL_OK)
 	{
-		Error_Handler();
+//		Error_Handler();
 	}
 
-	HAL_ADC_Start(&hadc1);
-	HAL_ADC_Start(&hadc2);
+	HAL_ADC_Start(hadc1);
+	HAL_ADC_Start(hadc2);
 
-	if(HAL_ADC_PollForConversion(&hadc1, 5) == HAL_OK && HAL_ADC_PollForConversion(&hadc2, 5) == HAL_OK){
-		uint32_t value1 = HAL_ADC_GetValue(&hadc1);
-		uint32_t value2 = HAL_ADC_GetValue(&hadc1);
+	if(HAL_ADC_PollForConversion(hadc1, 5) == HAL_OK && HAL_ADC_PollForConversion(hadc2, 5) == HAL_OK){
+		uint32_t value1 = HAL_ADC_GetValue(hadc1);
+		uint32_t value2 = HAL_ADC_GetValue(hadc2);
 		return value1 << 16 | value2;
 	}else{
 		return 0;
@@ -87,6 +91,8 @@ static uint32_t read_2_ADC_Simultaneous(ADC_HandleTypeDef *hadc1,ADC_HandleTypeD
 
 void interpreate_data(uint32_t data, uint8_t mask)
 {
+//	uint8_t is_White = data & mask;
+
 
 }
 ///---------------------------------------------------</Enemy Sensors PRIVATE>---------------------------------------------------------
@@ -108,4 +114,29 @@ uint8_t Line_Sensors_Read(void){
 	uint32_t backR = secondValue & 0x0000FFFFU;
 
 	return 0;
+}
+
+void Line_Sensors_Test_Sensors_Output(uint8_t (*log_function)(char *))
+{
+	Line_Sensors_Init();
+	while(1)
+	{
+		uint32_t firstValue =  read_2_ADC_Simultaneous(&hFront_ADC, &hBack_ADC, SENSOR_FRONTL_CHANNEL, SENSOR_BACKL_CHANNEL);
+		uint32_t secondValue = read_2_ADC_Simultaneous(&hFront_ADC, &hBack_ADC, SENSOR_FRONTR_CHANNEL, SENSOR_BACKR_CHANNEL);
+
+		uint32_t frontL = firstValue >> 16;
+		uint32_t backL = firstValue & 0x0000FFFFU;
+		uint32_t frontR = secondValue >> 16;
+		uint32_t backR = secondValue & 0x0000FFFFU;
+
+		char s[100] = "";
+		sprintf(s,"%l       %l\r\n%l      %l\r\n\r\n",frontL,frontR,backL,backR);
+		(*log_function)(s);
+	}
+
+
+}
+void Line_Sensors_Test(uint8_t (*log_function)(char *))
+{
+
 }

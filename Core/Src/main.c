@@ -18,6 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "Line_Sensors.h"
+#include "Communication_Driver.h"
 
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
@@ -33,9 +35,13 @@ int main(void)
   HAL_Init();
   SystemClock_Config();
   MX_GPIO_Init();
+  Communication_Driver_Init();
+  Line_Sensors_Test_Sensors_Output(Communication_Driver_Log_To_Pc);
+
 
   while (1)
   {
+
 
   }
 }

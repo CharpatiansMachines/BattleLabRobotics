@@ -20,7 +20,7 @@
  *
  */
 
-uint8_t u8_Line_Sensors_data;
+extern uint8_t u8_Line_Sensors_data;
 void Line_Sensors_Init(void);
 
 /** ?
@@ -29,6 +29,9 @@ void Line_Sensors_Init(void);
  * Use LINE_DETECTION_MASKS
  */
 uint8_t Line_Sensors_Read(void);
+
+void Line_Sensors_Test_Sensors_Output(uint8_t (*log_function)(char *));
+void Line_Sensors_Test(uint8_t (*log_function)(char *));
 
 
 

@@ -1,5 +1,7 @@
-Line_Sensors.c:34:13:configure_adc_for_line	2
-Line_Sensors.c:55:17:read_2_ADC_Simultaneous	5
-Line_Sensors.c:88:6:interpreate_data	1
-Line_Sensors.c:95:6:Line_Sensors_Init	1
-Line_Sensors.c:101:9:Line_Sensors_Read	1
+Line_Sensors.c:38:13:configure_adc_for_line	1
+Line_Sensors.c:59:17:read_2_ADC_Simultaneous	3
+Line_Sensors.c:92:6:interpreate_data	1
+Line_Sensors.c:101:6:Line_Sensors_Init	1
+Line_Sensors.c:107:9:Line_Sensors_Read	1
+Line_Sensors.c:119:6:Line_Sensors_Test_Sensors_Output	1
+Line_Sensors.c:139:6:Line_Sensors_Test	1
