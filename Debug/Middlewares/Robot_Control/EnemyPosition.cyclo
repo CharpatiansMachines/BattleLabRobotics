@@ -1,0 +1,5 @@
+EnemyPosition.c:13:9:Enemy_Position_To_Number	4
+EnemyPosition.c:25:15:Enemy_Position_From_Number	4
+EnemyPosition.c:46:9:Enemy_Position_Probably_The_Next_Position	10
+EnemyPosition.c:70:9:Enemy_Position_Is_Closer	2
+EnemyPosition.c:77:6:Enemy_Position_Test	6

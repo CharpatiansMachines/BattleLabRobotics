@@ -65,8 +65,38 @@ void Error_Handler(void);
 #define PH0_OSC_IN_GPIO_Port GPIOH
 #define PH1_OSC_OUT_Pin GPIO_PIN_1
 #define PH1_OSC_OUT_GPIO_Port GPIOH
+#define Trimpot_0_Pin GPIO_PIN_4
+#define Trimpot_0_GPIO_Port GPIOC
+#define Trimpot_1_Pin GPIO_PIN_5
+#define Trimpot_1_GPIO_Port GPIOC
+#define ENEMY_SENSOR_9_Pin GPIO_PIN_9
+#define ENEMY_SENSOR_9_GPIO_Port GPIOD
+#define ENEMY_SENSOR_8_Pin GPIO_PIN_10
+#define ENEMY_SENSOR_8_GPIO_Port GPIOD
+#define DIP_SWITCH_3_Pin GPIO_PIN_12
+#define DIP_SWITCH_3_GPIO_Port GPIOD
 #define SWCLK_Pin GPIO_PIN_14
 #define SWCLK_GPIO_Port GPIOA
+#define DIP_SEITCH_1_Pin GPIO_PIN_11
+#define DIP_SEITCH_1_GPIO_Port GPIOC
+#define DIP_SWITCH_2_Pin GPIO_PIN_12
+#define DIP_SWITCH_2_GPIO_Port GPIOC
+#define ENEMY_SENSOR_0_Pin GPIO_PIN_0
+#define ENEMY_SENSOR_0_GPIO_Port GPIOD
+#define ENEMY_SENSOR_1_Pin GPIO_PIN_1
+#define ENEMY_SENSOR_1_GPIO_Port GPIOD
+#define ENEMY_SENSOR_2_Pin GPIO_PIN_2
+#define ENEMY_SENSOR_2_GPIO_Port GPIOD
+#define ENEMY_SENSOR_3_Pin GPIO_PIN_3
+#define ENEMY_SENSOR_3_GPIO_Port GPIOD
+#define ENEMY_SENSOR_4_Pin GPIO_PIN_4
+#define ENEMY_SENSOR_4_GPIO_Port GPIOD
+#define ENEMY_SENSOR_5_Pin GPIO_PIN_5
+#define ENEMY_SENSOR_5_GPIO_Port GPIOD
+#define ENEMY_SENSOR_6_Pin GPIO_PIN_6
+#define ENEMY_SENSOR_6_GPIO_Port GPIOD
+#define ENEMY_SENSOR_7_Pin GPIO_PIN_7
+#define ENEMY_SENSOR_7_GPIO_Port GPIOD
 
 /* USER CODE BEGIN Private defines */
 

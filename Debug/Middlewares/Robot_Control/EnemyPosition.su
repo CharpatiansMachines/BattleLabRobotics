@@ -1,0 +1,5 @@
+../Middlewares/Robot_Control/EnemyPosition.c:13:9:Enemy_Position_To_Number	16	static
+../Middlewares/Robot_Control/EnemyPosition.c:25:15:Enemy_Position_From_Number	24	static
+../Middlewares/Robot_Control/EnemyPosition.c:46:9:Enemy_Position_Probably_The_Next_Position	32	static
+../Middlewares/Robot_Control/EnemyPosition.c:70:9:Enemy_Position_Is_Closer	24	static
+../Middlewares/Robot_Control/EnemyPosition.c:77:6:Enemy_Position_Test	296	static

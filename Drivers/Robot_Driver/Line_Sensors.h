@@ -11,16 +11,14 @@
 #include "stdint.h"
 #include "stm32f4xx.h"
 
-#define LINE_DETECTION_FRONTL_MASK 0x01;
-#define LINE_DETECTION_FRONTR_MASK 0x02;
-#define LINE_DETECTION_BACKL_MASK 0x04;
-#define LINE_DETECTION_BACKR_MASK 0x08;
+#define LINE_DETECTION_FRONTL_MASK 0x01
+#define LINE_DETECTION_FRONTR_MASK 0x02
+#define LINE_DETECTION_BACKL_MASK 0x04
+#define LINE_DETECTION_BACKR_MASK 0x08
 
 /**?
  *
  */
-
-extern uint8_t u8_Line_Sensors_data;
 void Line_Sensors_Init(void);
 
 /** ?

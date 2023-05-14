@@ -12,6 +12,7 @@
 
 
 #define COMMUNICATION_DRIVER_BUFFER_SIZE 1024
+#define COMMUNICATION_DRIVER_TRIMPOTS_NO 2
 
 typedef enum{
 	STOP_FIGHT = 0x00,
@@ -25,6 +26,7 @@ typedef enum {
 
 
 extern char Communication_Driver_Buffer[COMMUNICATION_DRIVER_BUFFER_SIZE];
+extern uint8_t Communication_Driver_Trimpots_Data[4];
 
 /**
  * reinitialize Communication_Driver_Buffer
@@ -55,6 +57,9 @@ Action_Command Communication_Driver_Read_Action_Command(void);
  * @return
  */
 Fight_Command Communication_Driver_Read_Fight_Command(void);
+
+
+void Communication_Drive_Read_Trimpots(void);
 
 
 //////////////////////////////////////////////////// Test Function ////////////////////////

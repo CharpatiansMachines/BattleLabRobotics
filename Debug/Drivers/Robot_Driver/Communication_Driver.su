@@ -1,4 +1,6 @@
-../Drivers/Robot_Driver/Communication_Driver.c:23:6:UART2_Configuration	40	static
-../Drivers/Robot_Driver/Communication_Driver.c:49:6:Communication_Driver_Init	8	static
-../Drivers/Robot_Driver/Communication_Driver.c:53:9:Communication_Driver_Log_To_Pc	16	static
-../Drivers/Robot_Driver/Communication_Driver.c:63:6:Communication_Driver_Test_Log_To_Pc	112	static
+../Drivers/Robot_Driver/Communication_Driver.c:25:6:UART2_Configuration	40	static
+../Drivers/Robot_Driver/Communication_Driver.c:49:6:Trimpots_ADC_INIT	24	static
+../Drivers/Robot_Driver/Communication_Driver.c:99:6:Communication_Driver_Init	8	static
+../Drivers/Robot_Driver/Communication_Driver.c:103:6:Communication_Drive_Read_Trimpots	8	static
+../Drivers/Robot_Driver/Communication_Driver.c:110:9:Communication_Driver_Log_To_Pc	16	static
+../Drivers/Robot_Driver/Communication_Driver.c:121:6:Communication_Driver_Test_Log_To_Pc	112	static

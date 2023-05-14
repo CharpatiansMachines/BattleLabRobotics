@@ -26,6 +26,7 @@ Core/Src \
 Core/Startup \
 Drivers/Robot_Driver \
 Drivers/STM32F4xx_HAL_Driver/Src \
+Middlewares/Robot_Control \
 Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src \
 Middlewares/ST/STM32_USB_Device_Library/Core/Src \
 USB_DEVICE/App \
